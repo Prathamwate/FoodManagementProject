@@ -19,9 +19,9 @@
    
 * Repository
   * In this Application am used 3 Repository
-   * INgosRepository
-   * IUserRepository
-   * IStatusRepository
+    * INgosRepository
+    * IUserRepository
+    * IStatusRepository
   
 * Database
   * I used Myslq Database In this Application.
