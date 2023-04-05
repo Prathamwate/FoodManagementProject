@@ -1,8 +1,10 @@
 ## Weaste Food Management REST API
+   * Weaste Food Management is a RestAPI Using Spring Boot for managing the User and non-goverments(NGOs) data. Application help to find out the ngos and  distribute the food to people in need.   
 ### Frameworks and Language used:
 * Spring
 * Spring boot
 * Java
+* Swagger
 
 ### Data Flow
 * Controller : 
@@ -24,5 +26,10 @@
     * IStatusRepository
   
 * Database
-  * I used Myslq Database In this Application.
+    * I used Myslq Database In this Application.
+
+
+## Project Summary 
+
+
 
