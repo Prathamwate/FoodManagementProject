@@ -7,11 +7,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class StatusService {
-    @Autowired
-    StatusRepository statusRepository;
+  @Autowired StatusRepository statusRepository;
 
-    public int createStatus(Status newStatus) {
-        Status status = statusRepository.save(newStatus);
-        return status.getStatusId();
-    }
+  public int createStatus(Status newStatus) {
+    Status status = statusRepository.save(newStatus);
+    return status.getStatusId();
+  }
 }

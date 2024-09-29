@@ -14,14 +14,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "api/v1/status")
 public class StatusController {
-    @Autowired
-    StatusService statusService;
-    @Autowired
-    StatusUtility statusUtility;
-    @PostMapping(value = "create-status")
-    public ResponseEntity<String> createStatus(@RequestBody String statusData){
-        Status status = statusUtility.setStatus(statusData);
-        int statusId = statusService.createStatus(status);
-        return new ResponseEntity<String>("Status Created with id: "+statusId, HttpStatus.CREATED);
-    }
+
+  @Autowired StatusService statusService;
+
+  @Autowired StatusUtility statusUtility;
+
+  @PostMapping(value = "create-status")
+  public ResponseEntity<String> createStatus(@RequestBody String statusData) {
+    Status status = statusUtility.setStatus(statusData);
+    int statusId = statusService.createStatus(status);
+    return new ResponseEntity<String>("Status Created with id: " + statusId, HttpStatus.CREATED);
+  }
 }

@@ -11,11 +11,11 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "tbl_status")
 public class Status {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "status_id")
-    private int statusId;
-    @Column(name = "status")
-    private String status;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "status_id")
+  private int statusId;
 
+  @Column(name = "status")
+  private String status;
 }

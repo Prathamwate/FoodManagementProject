@@ -1,11 +1,9 @@
 package com.project.FoodWasteManagementProject.repository;
 
+import com.project.FoodWasteManagementProject.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.project.FoodWasteManagementProject.model.User;
+public interface IUserRepository extends JpaRepository<User, Integer> {
 
-public interface IUserRepository extends JpaRepository<User,Integer>{
-
-	User findByUsername(String usenameString);
-
+  User findByUsername(String usenameString);
 }

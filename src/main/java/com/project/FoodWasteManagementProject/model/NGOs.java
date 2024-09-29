@@ -19,41 +19,38 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "tbl_Ngos")
 public class NGOs {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="Ngo_id")
-	private Integer id;
-	
-	@Column(name="Ngo_username")
-	private String ngoName;
-	
-	@Column(name="Ngo_password")
-	private String password;
-	
-	@Column(name="Ngo_type")
-	private String type;
-	
-	@Column(name="Ngo_fullname")
-	private String ngoFullname;
-	
-	@Column(name="Ngo_address")
-	private String address;
-	
-	@Column(name = "ngo_city")
-	private String city;
-	
-	@Column(name="Ngo_pincode")
-	@NotNull
-	private Integer pinCode;
-	
-	@Column(name="Ngo_phonenumber")
-	private String phoneNumber;
-	
-	@ManyToOne
-	@JoinColumn(name = "statusId")
-	private Status statusid;
-	
-	
 
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "Ngo_id")
+  private Integer id;
+
+  @Column(name = "Ngo_username")
+  private String ngoName;
+
+  @Column(name = "Ngo_password")
+  private String password;
+
+  @Column(name = "Ngo_type")
+  private String type;
+
+  @Column(name = "Ngo_fullname")
+  private String ngoFullname;
+
+  @Column(name = "Ngo_address")
+  private String address;
+
+  @Column(name = "ngo_city")
+  private String city;
+
+  @Column(name = "Ngo_pincode")
+  @NotNull
+  private Integer pinCode;
+
+  @Column(name = "Ngo_phonenumber")
+  private String phoneNumber;
+
+  @ManyToOne
+  @JoinColumn(name = "statusId")
+  private Status statusid;
 }

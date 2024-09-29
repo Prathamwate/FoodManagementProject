@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class FoodWasteManagementProjectApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(FoodWasteManagementProjectApplication.class, args);
-	}
-
+  public static void main(String[] args) {
+    SpringApplication.run(FoodWasteManagementProjectApplication.class, args);
+  }
 }

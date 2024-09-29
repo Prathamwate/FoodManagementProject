@@ -1,14 +1,13 @@
 package com.project.FoodWasteManagementProject.utils;
 
 
+import com.project.FoodWasteManagementProject.model.NGOs;
+import com.project.FoodWasteManagementProject.model.Status;
+import com.project.FoodWasteManagementProject.repository.StatusRepository;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import com.project.FoodWasteManagementProject.model.NGOs;
-import com.project.FoodWasteManagementProject.model.Status;
-import com.project.FoodWasteManagementProject.repository.StatusRepository;
 
 @Component
 public class SetNgos {
@@ -42,8 +41,6 @@ public class SetNgos {
 	  if(!jsObject.has("phoneNumber")) {
 		  jsonArray.put("phoneNumber is Not present"); 
 	  }
-	  
-	  
 		return jsonArray;
 	}
 
@@ -98,7 +95,6 @@ public class SetNgos {
 	}
 	
 	public JSONObject getNgos(NGOs ngOs) {
-		
 		 JSONObject ngoJsonObject=new JSONObject();
 		 ngoJsonObject.put("NGO Full Name",ngOs.getNgoFullname());
 		 ngoJsonObject.put("City",ngOs.getCity());
@@ -106,8 +102,6 @@ public class SetNgos {
 		 ngoJsonObject.put("Pincode",ngOs.getPinCode());
 		 ngoJsonObject.put("Type",ngOs.getType());
 		 ngoJsonObject.put("phoneNumber",ngOs.getPhoneNumber());
-		
-		 
 		 return ngoJsonObject;
 	}
 
